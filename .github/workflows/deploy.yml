@@ -1,9 +1,11 @@
 name: Deploy to GitHub Pages
 
+# Deploys only from `main` — the github-pages environment allows only the
+# default branch (deployment branch policy). Merging the contract-builder
+# PR into main triggers this workflow automatically.
 on:
   push:
     branches:
-      - arena/37e84770-contract
       - main
   workflow_dispatch:
 
