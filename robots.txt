@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://miimcode5.github.io/contract/sitemap.xml
