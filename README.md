@@ -33,7 +33,7 @@ python3 -m http.server 8080
 
 ## دیپلوی (GitHub Actions → GitHub Pages)
 
-هر push روی شاخهٔ `arena/37e84770-contract` یا `main` باعث بیلد و انتشار خودکار می‌شود:
+دیپلوی از شاخهٔ `main` انجام می‌شود (محیط `github-pages` فقط main را مجاز می‌داند)؛ با هر push روی `main` یا اجرای دستی workflow (`workflow_dispatch`) سایت به‌روز می‌شود:
 
 1. `actions/checkout` → `configure-pages` → `upload-pages-artifact` (path: ریشهٔ مخزن) → `deploy-pages`
 2. آدرس نهایی: `https://<user>.github.io/<repo>/` (هم‌اکنون برای `miimcode5/contract` فعال است)
